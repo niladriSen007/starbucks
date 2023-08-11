@@ -3,7 +3,7 @@ import {BiMobile} from "react-icons/bi"
 
 const InstallApp = () => {
   return (
-    <div className="bg-green-900 text-white p-2 fixed top-16 left-0 right-0 z-50 px-48">
+    <div className="bg-green-900 text-white p-2 fixed top-20 left-0 right-0 z-50 px-48">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex gap-1 items-center justify-center">
           {/* <p className="font-semibold">Install Our App</p> */}

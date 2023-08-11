@@ -12,8 +12,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white shadow-lg h-24 w-screen">
-        <div className="container mx-auto px-4 py-2">
+      <nav className="bg-white shadow-lg h-24 w-screen fixed z-50 b top-0">
+        <div className="container mx-auto px-4 pt-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex gap-3 items-center">
