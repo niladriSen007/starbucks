@@ -24,3 +24,16 @@
 .anim {
   animation: imageMove linear 2s infinite alternate;
 }
+
+
+.mobileNav{
+  width: 100vw;
+  height: 100vh;
+}
+
+.hideMobileNav{
+  transform: translateX(-100%);
+}
+.showMobileNav{
+  transform: translateX(0);
+}

@@ -4,15 +4,16 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import Image from "next/image";
+import MobileNavbar from "./MobileNavbar";
 
-const navLinks = ["Home", "Gift", "Order", "Pay", "Store"];
+const navLinks : String[] = ["Home", "Gift", "Order", "Pay", "Store"];
 
 const Navbar = () => {
   const [active, setActive] = useState<number>(0);
 
   return (
     <>
-      <nav className="bg-white shadow-lg h-24 w-screen fixed z-50 b top-0">
+      <nav className="bg-white shadow-lg h-28 md:h-24 w-screen fixed z-40 b top-0 hidden md:block">
         <div className="container mx-auto px-4 pt-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -47,6 +48,16 @@ const Navbar = () => {
                   )}
                 </li>
               ))}
+              <li
+                  className="relative transition-all duration-300"
+                >
+                  <Link
+                    href="/"
+                    className="text-gray-700  hover:text-gray-900 transition-all duration-300"
+                  >
+                    Cart(3)
+                  </Link>
+                </li>
             </ul>
             <div className="flex items-center gap-6">
               <div className="flex gap-1 items-center border-2 botder-gray-200 px-2 py-1 rounded-full">
@@ -59,11 +70,14 @@ const Navbar = () => {
                   className=" outline-none "
                 />
               </div>
-              <CgProfile size={28}/>
+              <CgProfile size={28} />
             </div>
           </div>
         </div>
       </nav>
+      <div className="md:hidden">
+        <MobileNavbar />
+      </div>
     </>
   );
 };
