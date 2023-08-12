@@ -1,5 +1,6 @@
 "use client";
 import Footer from "@/components/Footer";
+import Recommendations from "@/components/Recommended/Recommendations";
 import Slider from "@/components/Slider";
 import TypewriterComp from "@/components/TypewriterComp";
 import Categories from "@/components/category/categories";
@@ -24,7 +25,8 @@ export default function Home() {
         </div>
       </div>
       <Categories />
-      <Slider />
+      {/* <Slider /> */}
+      <Recommendations />
     
     </main>
   );
