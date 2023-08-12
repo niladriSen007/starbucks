@@ -48,7 +48,7 @@ const categoryItems = [
 const Categories = () => {
   return (
     <div className="">
-    <h1 className="text-2xl text-green-800 font-bold text-center py-6 md:py-12">Hndcrafter Curations</h1>
+    <h1 className="text-2xl md:text-4xl text-green-800 font-bold  text-center py-6 md:py-12">Handcrafter Curations</h1>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-8 justify-between items-center place-items-center">
         {categoryItems.map((category) => (
           <div key={category.id}>
