@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const navLinks = ["Home", "Gift", "Order", "Pay", "Store"];
+const navLinks = ["Home", "Gift", "Order", "Pay", "Store","Cart(3)"];
 
 const MobileNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
