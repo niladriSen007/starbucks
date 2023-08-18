@@ -1,4 +1,14 @@
-export const categoryItems = [
+
+
+interface categoryItem{
+  id:number,
+  name:String,
+  url:String
+}
+
+type catItems = categoryItem[]
+
+export const categoryItems : catItems = [
     {
       id: 1,
       name: "Bestseller",
