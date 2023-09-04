@@ -4,6 +4,16 @@ import RecommendedItemCard from "./RecommendedItemCard";
 import { recommendedItems } from "../../../constants/recommendedItems";
 import { withRecommendedWrapper } from "../HOC/withRecommendedWrapper";
 
+interface RecommendedCardType{
+  id: number,
+  name: String,
+  description: String,
+  price : number,
+  promoted ?: Boolean,
+  imageSrc : String
+
+}
+
 const Recommendations = () => {
   return (
     <div className="mx-8 md:mx-12 my-24">
@@ -11,7 +21,7 @@ const Recommendations = () => {
         Latest Offerings
       </h2>
       <div className="flex flex-col gap-16 md:flex-row items-center justify-between ">
-        {recommendedItems.map((recommendedItem) =>
+        {recommendedItems.map((recommendedItem : RecommendedCardType) =>
           recommendedItem?.promoted ? (
             withRecommendedWrapper(RecommendedItemCard)({recommendedItem})
           ) : (

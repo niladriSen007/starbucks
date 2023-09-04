@@ -2,7 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const RecommendedItemCard = ({ recommendedItem }) => {
+
+
+interface RecommendedCardType{
+  id: number,
+  name: String,
+  description: String,
+  price : number,
+  promoted ?: Boolean,
+  imageSrc : String
+
+}
+
+const RecommendedItemCard : React.FC<RecommendedCardType> = ({recommendedItem}) => {
   const nameLink : String = recommendedItem?.name.replace(/\s/g,'').toLowerCase() ;
   return (
     <Link href={`/products/${nameLink}`}>
