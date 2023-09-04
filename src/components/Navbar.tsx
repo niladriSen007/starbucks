@@ -6,7 +6,12 @@ import Link from "next/link";
 import Image from "next/image";
 import MobileNavbar from "./MobileNavbar";
 
-const navLinks : String[] = ["Home", "Gift", "Order", "Pay", "Store"];
+const navLinks: String[] = [
+  { name: "Home", navLink: "/" },
+  { name: "Gift", navLink: "/" },
+  { name: "Order", navLink: "/order" },
+  { name: "Store", navLink: "/store" },
+];
 
 const Navbar = () => {
   const [active, setActive] = useState<number>(0);
@@ -38,26 +43,24 @@ const Navbar = () => {
                   onMouseOver={() => setActive(index)}
                 >
                   <Link
-                    href="/"
+                    href={navLink?.navLink}
                     className="text-gray-700  hover:text-gray-900 transition-all duration-300"
                   >
-                    {navLink}
+                    {navLink?.name}
                   </Link>
                   {active === index && (
                     <div className="absolute w-10  rounded-lg h-[3.5px] bg-green-900 bottom-[-1]"></div>
                   )}
                 </li>
               ))}
-              <li
-                  className="relative transition-all duration-300"
+              <li className="relative transition-all duration-300">
+                <Link
+                  href="/"
+                  className="text-gray-700  hover:text-gray-900 transition-all duration-300"
                 >
-                  <Link
-                    href="/"
-                    className="text-gray-700  hover:text-gray-900 transition-all duration-300"
-                  >
-                    Cart(3)
-                  </Link>
-                </li>
+                  Cart(3)
+                </Link>
+              </li>
             </ul>
             <div className="flex items-center gap-6">
               <div className="flex gap-1 items-center border-2 botder-gray-200 px-2 py-1 rounded-full">

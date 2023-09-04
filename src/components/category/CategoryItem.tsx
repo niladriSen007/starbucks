@@ -13,15 +13,15 @@ const CategoryItem = ({ catItems }) => {
   const nameLink = name.replace(/\s/g,'').toLowerCase() ;
   return (
     <div>
-      <Link href={`/menu/${nameLink}`}>
+      <Link href={`/store/${nameLink}`} className="flex flex-col gap-4">
         <Image
-          className=" rounded-lg"
+          className=" rounded-lg w-28"
           src={url}
           alt="category_photo"
           width={96}
           height={96}
         />
-        <h2 className="text-sm">{name}</h2>
+        <h2 className="text-lg font-bold">{name}</h2>
       </Link>
     </div>
   );
