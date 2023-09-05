@@ -6,7 +6,8 @@ const nextConfig = {
             "images.unsplash.com",
             "https://www.starbucks.in",
             "https://upload.wikimedia.org",
-            "plus.unsplash.com"
+            "plus.unsplash.com",
+            "images.pexels.com"
         ]
     }
 }
