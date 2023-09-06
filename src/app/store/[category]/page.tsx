@@ -17,6 +17,7 @@ const Category = () => {
               <p className='text-sm'>{food?.description?.slice(0,60)}...</p>
               <p className=' font-bold text-lg'>Price - ${food?.price}</p>
               <button className='bg-green-800 px-2 py-1 rounded-sm text-white my-1'>Add to Cart</button>
+              <button className='bg-green-800 px-2 py-1 rounded-sm text-white my-1'>Like</button>
             </div>
           </Link>
         ))
