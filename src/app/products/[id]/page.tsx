@@ -18,6 +18,13 @@ const SingleProduct = () => {
           alt=""
           className="w-80 h-80 object-fill rounded-lg"
         />
+        <Image
+          src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1981&q=80"
+          width={96}
+          height={96}
+          alt=""
+          className="w-80 h-80 object-fill rounded-lg"
+        />
       </div>}
       <div className="flex flex-col gap-5 w-[640px]">
         <h2 className=" text-3xl font-bold text-green-900">Pizza</h2>
