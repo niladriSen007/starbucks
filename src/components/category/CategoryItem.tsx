@@ -8,8 +8,7 @@ interface categoryProps {
   url: String;
 }
 
-const CategoryItem = ({ catItems }) => {
-  const { id, name, url } = catItems;
+const CategoryItem = ({ id,name,url } : categoryProps) => {
   const nameLink = name.replace(/\s/g,'').toLowerCase() ;
   return (
     <div>

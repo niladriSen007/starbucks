@@ -11,7 +11,7 @@ const Store = () => {
       <h1 className="text-2xl font-bold mb-4">Categories</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {categoryItems?.map((category) => (
-          <CategoryItem catItems={category} key={category?.id}/>
+          <CategoryItem id={category?.id} name={category?.name} url={category?.url} key={category?.id}/>
         ))}
       </div>
     </div>
