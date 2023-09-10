@@ -40,6 +40,9 @@ const Price = ({ price, id, options }: PriceProps) => {
           </button>
           <p>{quantity}</p>
           <button className="text-2xl text-green-900" onClick={() => setQuantity((prev) => prev + 1)}> <AiFillPlusCircle /></button>
+          <button className="text-2xl text-green-900" onClick={() => setQuantity((prev) => prev + 1)}> <AiFillPlusCircle /></button>
+          <button className="text-2xl text-green-900" onClick={() => setQuantity((prev) => prev + 1)}> <AiFillPlusCircle /></button>
+          <button className="text-2xl text-green-900" onClick={() => setQuantity((prev) => prev + 1)}> <AiFillPlusCircle /></button>
         </div>
       </div>
     </div>
