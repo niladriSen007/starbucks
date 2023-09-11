@@ -55,7 +55,7 @@ const Navbar = () => {
               ))}
               <li className="relative transition-all duration-300">
                 <Link
-                  href="/"
+                  href="/cart"
                   className="text-gray-700  hover:text-gray-900 transition-all duration-300"
                 >
                   Cart(3)
