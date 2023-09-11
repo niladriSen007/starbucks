@@ -9,7 +9,7 @@ interface categoryProps {
 }
 
 const CategoryItem = ({ id,name,url } : categoryProps) => {
-  const nameLink = name.replace(/\s/g,'').toLowerCase() ;
+  const nameLink : String = name?.replace(/\s/g,'').toLowerCase() ;
   return (
     <div>
       <Link href={`/store/${nameLink}`} className="flex flex-col gap-4">
